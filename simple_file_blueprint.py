@@ -8,7 +8,7 @@ from flask import Response
 
 @blueprint.route('/')
 def list():
-  p = subprocess.Popen(['ls','-l'],stdout = subprocess.PIPE)
+  p = subprocess.Popen(['find','.'],stdout = subprocess.PIPE)
   return Response(p.stdout.readlines(), mimetype='text/plain')
 
 @blueprint.route('/<path:filepath>')
