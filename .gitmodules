@@ -1,0 +1,3 @@
+[submodule "dynkinweb"]
+	path = dynkinweb
+	url = https://github.com/lukasheinrich/dynkinweb.git
